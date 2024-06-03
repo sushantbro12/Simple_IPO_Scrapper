@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IPO Data</title>
+</head>
+<body>
+    <h1>IPO Data</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>S_N</th>
+                <th>Symbol</th>
+                <th>Company</th>
+                <th>Units</th>
+                <th>Price</th>
+                <th>Opening Date</th>
+                <th>Closing Date</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}
+            <tr>
+                <td>{{ row[0] }}</td>
+                <td>{{ row[1] }}</td>
+                <td>{{ row[2] }}</td>
+                <td>{{ row[3] }}</td>
+                <td>{{ row[4] }}</td>
+                <td>{{ row[5] }}</td>
+                <td>{{ row[6] }}</td>
+                <td>{{ row[7] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
